@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Согласие на обработку ПДн — Агентство лидогенерации Звезда</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body {
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.7;
+        color: #1a1a1a;
+        background: #f8f9fa;
+        padding: 40px 20px;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 4px 60px rgba(0, 0, 0, 0.06);
+        padding: 48px 56px;
+      }
+
+      .docs-nav {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      }
+
+      .docs-nav a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        color: #555;
+        background: #f5f5f5;
+        transition: all 0.25s ease;
+        border: 1px solid transparent;
+      }
+
+      .docs-nav a i {
+        font-size: 14px;
+      }
+
+      .docs-nav a:hover {
+        background: #e8e8e8;
+        color: #1a1a1a;
+      }
+
+      .docs-nav a.active {
+        background: #1a1a1a;
+        color: #fff;
+        border-color: #1a1a1a;
+      }
+
+      .docs-nav a.active i {
+        color: #fff;
+      }
+
+      h1 {
+        font-size: 28px;
+        font-weight: 800;
+        margin-bottom: 6px;
+        letter-spacing: -0.02em;
+      }
+
+      .doc-meta {
+        color: #888;
+        font-size: 14px;
+        margin-bottom: 32px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .doc-meta span {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      h2 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 32px;
+        margin-bottom: 12px;
+        letter-spacing: -0.01em;
+      }
+
+      h3 {
+        font-size: 17px;
+        font-weight: 600;
+        margin-top: 24px;
+        margin-bottom: 8px;
+      }
+
+      p {
+        margin-bottom: 16px;
+        color: #333;
+      }
+
+      ul,
+      ol {
+        margin-bottom: 16px;
+        padding-left: 24px;
+      }
+
+      li {
+        margin-bottom: 8px;
+        color: #333;
+      }
+
+      .highlight-box {
+        background: #f8f9fa;
+        border-left: 4px solid #1a1a1a;
+        padding: 16px 24px;
+        border-radius: 0 10px 10px 0;
+        margin: 20px 0;
+      }
+
+      .highlight-box strong {
+        color: #1a1a1a;
+      }
+
+      .doc-footer {
+        margin-top: 40px;
+        padding-top: 24px;
+        border-top: 1px solid rgba(0, 0, 0, 0.06);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 16px;
+        font-size: 14px;
+        color: #888;
+      }
+
+      .doc-footer .btn-print {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 24px;
+        background: #1a1a1a;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background 0.25s ease;
+      }
+
+      .doc-footer .btn-print:hover {
+        background: #2a2a2a;
+      }
+
+      .checkbox-block {
+        margin: 32px 0 20px;
+        padding: 24px 28px;
+        background: #f8f9fa;
+        border-radius: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+      }
+
+      .checkbox-block label {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .checkbox-block input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        margin-top: 2px;
+        flex-shrink: 0;
+        accent-color: #1a1a1a;
+        cursor: pointer;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 28px 20px;
+        }
+        .docs-nav {
+          gap: 8px;
+          padding-bottom: 24px;
+        }
+        .docs-nav a {
+          font-size: 13px;
+          padding: 8px 14px;
+        }
+        h1 {
+          font-size: 22px;
+        }
+        h2 {
+          font-size: 18px;
+        }
+        .doc-footer {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .checkbox-block {
+          padding: 18px 16px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: 16px 12px;
+        }
+        .container {
+          padding: 20px 16px;
+          border-radius: 16px;
+        }
+        .docs-nav a {
+          font-size: 12px;
+          padding: 6px 12px;
+        }
+        .docs-nav a span {
+          display: none;
+        }
+        h1 {
+          font-size: 19px;
+        }
+      }
+
+      @media print {
+        body {
+          background: #fff;
+          padding: 0;
+        }
+        .container {
+          box-shadow: none;
+          padding: 40px;
+          border-radius: 0;
+        }
+        .docs-nav {
+          display: none;
+        }
+        .doc-footer .btn-print {
+          display: none;
+        }
+        .checkbox-block {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Навигация -->
+      <nav class="docs-nav">
+        <a href="./privacy.html">
+          <i class="fas fa-lock"></i> <span>Политика конфиденциальности</span>
+        </a>
+        <a href="./consent.html" class="active">
+          <i class="fas fa-check-circle"></i>
+          <span>Согласие на обработку ПДн</span>
+        </a>
+        <a href="./contract.html">
+          <i class="fas fa-file-signature"></i>
+          <span>Договор на оказание услуг</span>
+        </a>
+      </nav>
+
+      <!-- Документ -->
+      <h1>Согласие на обработку персональных данных</h1>
+      <div class="doc-meta">
+        <span
+          ><i class="far fa-calendar-alt"></i> Версия от 30 августа 2026
+          г.</span
+        >
+        <span
+          ><i class="far fa-building"></i> Агентство лидогенерации
+          «Звезда»</span
+        >
+      </div>
+
+      <p>
+        Настоящим я, свободно, своей волей и в своём интересе даю согласие
+        Агентству лидогенерации «Звезда» (далее — Агентство) на обработку моих
+        персональных данных.
+      </p>
+
+      <h2>1. Перечень персональных данных</h2>
+      <p>Я согласен на обработку следующих персональных данных:</p>
+      <ul>
+        <li>Фамилия, имя, отчество;</li>
+        <li>Номер телефона;</li>
+        <li>Адрес электронной почты;</li>
+        <li>Наименование организации (при наличии);</li>
+        <li>ИНН / ОГРН организации (при наличии);</li>
+        <li>Должность;</li>
+        <li>Иные данные, указанные мной в заявке или договоре.</li>
+      </ul>
+
+      <h2>2. Цели обработки</h2>
+      <p>Я даю согласие на обработку персональных данных в следующих целях:</p>
+      <ul>
+        <li>
+          Заключение и исполнение договора на оказание услуг по лидогенерации;
+        </li>
+        <li>Консультации по услугам Агентства;</li>
+        <li>Направление коммерческих предложений и информации об услугах;</li>
+        <li>Обратная связь по запросам и заявкам;</li>
+        <li>Ведение бухгалтерского и налогового учёта.</li>
+      </ul>
+
+      <h2>3. Перечень действий с персональными данными</h2>
+      <p>
+        Я даю согласие на совершение следующих действий с моими персональными
+        данными: сбор, запись, систематизация, накопление, хранение, уточнение
+        (обновление, изменение), извлечение, использование, обезличивание,
+        блокирование, удаление, уничтожение персональных данных.
+      </p>
+      <p>
+        Обработка может осуществляться как с использованием средств
+        автоматизации, так и без их использования.
+      </p>
+
+      <h2>4. Срок действия согласия</h2>
+      <p>
+        4.1. Настоящее согласие вступает в силу с момента его предоставления и
+        действует в течение 5 (пяти) лет либо до момента достижения целей
+        обработки.
+      </p>
+      <p>
+        4.2. Я имею право отозвать данное согласие в любое время путём
+        направления письменного уведомления в адрес Агентства.
+      </p>
+
+      <h2>5. Порядок отзыва согласия</h2>
+      <p>
+        Отзыв согласия осуществляется путём направления письменного заявления по
+        адресу, указанному на Сайте Агентства. В случае отзыва согласия
+        Агентство обязуется прекратить обработку персональных данных и
+        уничтожить их в течение 30 рабочих дней.
+      </p>
+
+      <div class="highlight-box">
+        <strong>Внимание:</strong> Отзыв согласия на обработку персональных
+        данных может повлечь невозможность предоставления Агентством услуг по
+        лидогенерации.
+      </div>
+
+      <h2>6. Подтверждение</h2>
+      <p>
+        Я подтверждаю, что ознакомлен с положениями Федерального закона от
+        27.07.2006 № 152-ФЗ «О персональных данных» и даю согласие на обработку
+        моих персональных данных на указанных выше условиях.
+      </p>
+
+      <!-- Чекбокс для подписания -->
+      <div class="checkbox-block">
+        <label>
+          <input type="checkbox" id="consentCheck" />
+          Я ознакомлен и согласен с условиями обработки персональных данных
+        </label>
+      </div>
+
+      <div class="doc-footer">
+        <span>© 2026 Агентство лидогенерации «Звезда»</span>
+        <button class="btn-print" onclick="window.print()">
+          <i class="fas fa-print"></i> Распечатать
+        </button>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const checkbox = document.getElementById("consentCheck");
+        if (checkbox) {
+          checkbox.addEventListener("change", function () {
+            if (this.checked) {
+              console.log("Согласие на обработку ПДн получено");
+              // Здесь можно добавить логику сохранения согласия
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

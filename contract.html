@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Договор на оказание услуг — Агентство лидогенерации Звезда</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body {
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.7;
+        color: #1a1a1a;
+        background: #f8f9fa;
+        padding: 40px 20px;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 4px 60px rgba(0, 0, 0, 0.06);
+        padding: 48px 56px;
+      }
+
+      .docs-nav {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      }
+
+      .docs-nav a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        color: #555;
+        background: #f5f5f5;
+        transition: all 0.25s ease;
+        border: 1px solid transparent;
+      }
+
+      .docs-nav a i {
+        font-size: 14px;
+      }
+
+      .docs-nav a:hover {
+        background: #e8e8e8;
+        color: #1a1a1a;
+      }
+
+      .docs-nav a.active {
+        background: #1a1a1a;
+        color: #fff;
+        border-color: #1a1a1a;
+      }
+
+      .docs-nav a.active i {
+        color: #fff;
+      }
+
+      h1 {
+        font-size: 28px;
+        font-weight: 800;
+        margin-bottom: 6px;
+        letter-spacing: -0.02em;
+      }
+
+      .doc-meta {
+        color: #888;
+        font-size: 14px;
+        margin-bottom: 32px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .doc-meta span {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      h2 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 32px;
+        margin-bottom: 12px;
+        letter-spacing: -0.01em;
+      }
+
+      h3 {
+        font-size: 17px;
+        font-weight: 600;
+        margin-top: 24px;
+        margin-bottom: 8px;
+      }
+
+      p {
+        margin-bottom: 16px;
+        color: #333;
+      }
+
+      ul,
+      ol {
+        margin-bottom: 16px;
+        padding-left: 24px;
+      }
+
+      li {
+        margin-bottom: 8px;
+        color: #333;
+      }
+
+      .highlight-box {
+        background: #f8f9fa;
+        border-left: 4px solid #1a1a1a;
+        padding: 16px 24px;
+        border-radius: 0 10px 10px 0;
+        margin: 20px 0;
+      }
+
+      .highlight-box strong {
+        color: #1a1a1a;
+      }
+
+      .doc-footer {
+        margin-top: 40px;
+        padding-top: 24px;
+        border-top: 1px solid rgba(0, 0, 0, 0.06);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 16px;
+        font-size: 14px;
+        color: #888;
+      }
+
+      .doc-footer .btn-print {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 24px;
+        background: #1a1a1a;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background 0.25s ease;
+      }
+
+      .doc-footer .btn-print:hover {
+        background: #2a2a2a;
+      }
+
+      .contract-header {
+        text-align: center;
+        margin-bottom: 32px;
+      }
+
+      .contract-header .contract-number {
+        font-size: 18px;
+        font-weight: 700;
+        color: #1a1a1a;
+      }
+
+      .contract-header .contract-city {
+        font-size: 15px;
+        color: #555;
+        margin-top: 4px;
+      }
+
+      .signature-block {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+      }
+
+      .signature-block .signature-col {
+        padding: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        border-radius: 12px;
+      }
+
+      .signature-block .signature-col strong {
+        display: block;
+        margin-bottom: 12px;
+        font-size: 16px;
+      }
+
+      .signature-block .signature-col .field {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(0, 0, 0, 0.04);
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        color: #888;
+      }
+
+      .signature-block .signature-col .field span:last-child {
+        color: #1a1a1a;
+        font-weight: 500;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 28px 20px;
+        }
+        .docs-nav {
+          gap: 8px;
+          padding-bottom: 24px;
+        }
+        .docs-nav a {
+          font-size: 13px;
+          padding: 8px 14px;
+        }
+        h1 {
+          font-size: 22px;
+        }
+        h2 {
+          font-size: 18px;
+        }
+        .doc-footer {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .signature-block {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: 16px 12px;
+        }
+        .container {
+          padding: 20px 16px;
+          border-radius: 16px;
+        }
+        .docs-nav a {
+          font-size: 12px;
+          padding: 6px 12px;
+        }
+        .docs-nav a span {
+          display: none;
+        }
+        h1 {
+          font-size: 19px;
+        }
+      }
+
+      @media print {
+        body {
+          background: #fff;
+          padding: 0;
+        }
+        .container {
+          box-shadow: none;
+          padding: 40px;
+          border-radius: 0;
+        }
+        .docs-nav {
+          display: none;
+        }
+        .doc-footer .btn-print {
+          display: none;
+        }
+        .signature-block {
+          page-break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Навигация -->
+      <nav class="docs-nav">
+        <a href="./privacy.html">
+          <i class="fas fa-lock"></i> <span>Политика конфиденциальности</span>
+        </a>
+        <a href="./conset.html">
+          <i class="fas fa-check-circle"></i>
+          <span>Согласие на обработку ПДн</span>
+        </a>
+        <a href="./contract.html" class="active">
+          <i class="fas fa-file-signature"></i>
+          <span>Договор на оказание услуг</span>
+        </a>
+      </nav>
+
+      <!-- Документ -->
+      <h1>Договор на оказание услуг</h1>
+      <div class="doc-meta">
+        <span
+          ><i class="far fa-calendar-alt"></i> Версия от 30 августа 2026
+          г.</span
+        >
+        <span
+          ><i class="far fa-building"></i> Агентство лидогенерации
+          «Звезда»</span
+        >
+      </div>
+
+      <div class="contract-header">
+        <div class="contract-number">ДОГОВОР № _______</div>
+        <div style="font-weight: 600; margin: 4px 0">
+          на оказание услуг по лидогенерации
+        </div>
+        <div class="contract-city">
+          г. _______________ «___» ____________ 2026 г.
+        </div>
+      </div>
+
+      <p>
+        <strong>Агентство лидогенерации «Звезда»</strong>, именуемое в
+        дальнейшем «Исполнитель», в лице
+        _______________________________________________, действующего на
+        основании Устава, с одной стороны, и
+        <strong>_______________________________________________</strong>,
+        именуемое в дальнейшем «Заказчик», в лице
+        _______________________________________________, действующего на
+        основании _______________________________________________, с другой
+        стороны, совместно именуемые «Стороны», заключили настоящий Договор о
+        нижеследующем:
+      </p>
+
+      <h2>1. Предмет Договора</h2>
+      <p>
+        1.1. Исполнитель обязуется оказать Заказчику услуги по генерации и
+        передаче лидов (готовых кандидатов для контрактной службы по СВО), а
+        также по их квалификации и проверке, в соответствии с условиями
+        настоящего Договора, а Заказчик обязуется принять и оплатить эти услуги.
+      </p>
+      <p>
+        1.2. Лид — это информация о потенциальном кандидате, выразившем
+        добровольное желание заключить контракт на военную службу в рамках СВО,
+        прошедшем первичную квалификацию Исполнителем.
+      </p>
+
+      <h2>2. Права и обязанности Сторон</h2>
+
+      <h3>2.1. Исполнитель обязуется:</h3>
+      <ul>
+        <li>
+          Генерировать лиды в соответствии с согласованными с Заказчиком
+          критериями;
+        </li>
+        <li>
+          Проводить квалификацию каждого лида (проверку на актуальность) силами
+          своих операторов;
+        </li>
+        <li>Передавать лиды Заказчику в оговорённые сроки;</li>
+        <li>Заменять лиды, оказавшиеся ошибочными по вине Исполнителя;</li>
+        <li>
+          Предоставлять отчётность о количестве и качестве переданных лидов.
+        </li>
+      </ul>
+
+      <h3>2.2. Исполнитель имеет право:</h3>
+      <ul>
+        <li>
+          Запрашивать у Заказчика информацию, необходимую для исполнения
+          Договора;
+        </li>
+        <li>
+          Отказать в передаче лида, если он не соответствует согласованным
+          критериям;
+        </li>
+        <li>Привлекать третьих лиц для исполнения обязательств по Договору.</li>
+      </ul>
+
+      <h3>2.3. Заказчик обязуется:</h3>
+      <ul>
+        <li>Принимать и оплачивать переданные лиды в установленные сроки;</li>
+        <li>
+          Своевременно предоставлять Исполнителю обратную связь по качеству
+          лидов;
+        </li>
+        <li>
+          Обеспечить конфиденциальность полученной информации о кандидатах;
+        </li>
+        <li>
+          Не передавать полученные лиды третьим лицам без согласования с
+          Исполнителем.
+        </li>
+      </ul>
+
+      <h2>3. Условия замены лидов</h2>
+      <p>3.1. Исполнитель гарантирует замену лидов в следующих случаях:</p>
+      <ul>
+        <li>
+          <strong>Неверный возраст</strong> — возраст кандидата выше или ниже
+          допустимого;
+        </li>
+        <li>
+          <strong>Лид-дубль</strong> — повторная передача того же кандидата;
+        </li>
+        <li>
+          <strong>Офицерский состав</strong> — кандидат является действующим
+          офицером;
+        </li>
+        <li>
+          <strong>Кандидат уже на контракте</strong> — умолчал о наличии
+          действующего контракта;
+        </li>
+        <li>
+          <strong>Запретные судимости</strong> — наличие судимости,
+          препятствующей заключению контракта;
+        </li>
+        <li>
+          <strong>Запретные заболевания</strong> — наличие заболеваний,
+          препятствующих службе;
+        </li>
+        <li>
+          <strong>Третье лицо</strong> — при звонке трубку подняло лицо, не
+          являющееся кандидатом;
+        </li>
+        <li><strong>Иные случаи</strong> — по согласованию Сторон.</li>
+      </ul>
+      <p>
+        3.2. Замена лидов осуществляется в течение 5 (пяти) рабочих дней с
+        момента уведомления Заказчика.
+      </p>
+
+      <div class="highlight-box">
+        <strong>Важно:</strong> Замена лидов производится бесплатно для
+        Заказчика, если ошибка допущена по вине Исполнителя. Если ошибка
+        возникла по вине Заказчика, замена осуществляется за дополнительную
+        плату.
+      </div>
+
+      <h2>4. Стоимость услуг и порядок расчётов</h2>
+      <p>
+        4.1. Стоимость услуг определяется в соответствии с согласованным
+        прайс-листом и фиксируется в Приложении № 1 к настоящему Договору.
+      </p>
+      <p>4.2. Оплата осуществляется Заказчиком в следующем порядке:</p>
+      <ul>
+        <li>100% предоплата за согласованный объём лидов; или</li>
+        <li>По факту передачи каждого лида в течение 3 (трёх) рабочих дней.</li>
+      </ul>
+      <p>
+        4.3. Способ оплаты: безналичный расчёт. Исполнитель выставляет счёт по
+        ЭДО (электронный документооборот).
+      </p>
+      <p>
+        4.4. Датой исполнения обязательств по оплате считается дата поступления
+        денежных средств на счёт Исполнителя.
+      </p>
+
+      <h2>5. Ответственность Сторон</h2>
+      <p>
+        5.1. За неисполнение или ненадлежащее исполнение обязательств по
+        настоящему Договору Стороны несут ответственность в соответствии с
+        законодательством Российской Федерации.
+      </p>
+      <p>
+        5.2. Исполнитель несёт ответственность за качество передаваемых лидов и
+        своевременность их предоставления.
+      </p>
+      <p>
+        5.3. Заказчик несёт ответственность за своевременную оплату услуг и
+        конфиденциальность полученных лидов.
+      </p>
+
+      <h2>6. Конфиденциальность</h2>
+      <p>
+        6.1. Стороны обязуются соблюдать конфиденциальность в отношении
+        информации, полученной в рамках исполнения настоящего Договора.
+      </p>
+      <p>
+        6.2. Информация о кандидатах (лидах) является конфиденциальной и не
+        подлежит разглашению третьим лицам без согласия другой Стороны.
+      </p>
+
+      <h2>7. Срок действия Договора</h2>
+      <p>
+        7.1. Договор вступает в силу с момента его подписания и действует до
+        полного исполнения Сторонами своих обязательств.
+      </p>
+      <p>
+        7.2. Договор может быть расторгнут досрочно по соглашению Сторон или в
+        одностороннем порядке при нарушении условий Договора другой Стороной.
+      </p>
+
+      <h2>8. Порядок разрешения споров</h2>
+      <p>
+        8.1. Все споры, возникающие из настоящего Договора, решаются путём
+        переговоров.
+      </p>
+      <p>
+        8.2. Если переговоры не привели к решению спора, дело передаётся на
+        рассмотрение в суд по месту нахождения Исполнителя в соответствии с
+        законодательством Российской Федерации.
+      </p>
+
+      <h2>9. Форс-мажор</h2>
+      <p>
+        9.1. Стороны освобождаются от ответственности за неисполнение или
+        ненадлежащее исполнение обязательств по Договору, если это вызвано
+        обстоятельствами непреодолимой силы (форс-мажор).
+      </p>
+      <p>
+        9.2. К таким обстоятельствам относятся: стихийные бедствия, военные
+        действия, изменения в законодательстве, запретительные меры
+        государственных органов и иные объективные обстоятельства.
+      </p>
+
+      <h2>10. Заключительные положения</h2>
+      <p>
+        10.1. Все изменения и дополнения к настоящему Договору действительны,
+        если они оформлены в письменном виде и подписаны уполномоченными
+        представителями Сторон.
+      </p>
+      <p>
+        10.2. Во всём остальном, что не предусмотрено настоящим Договором,
+        Стороны руководствуются законодательством Российской Федерации.
+      </p>
+      <p>
+        10.3. Настоящий Договор составлен в двух экземплярах, имеющих равную
+        юридическую силу, по одному для каждой из Сторон.
+      </p>
+
+      <!-- Блок подписей -->
+      <div class="signature-block">
+        <div class="signature-col">
+          <strong>Исполнитель:</strong>
+          Агентство лидогенерации «Звезда»<br />
+          ИНН: _______________<br />
+          КПП: _______________<br />
+          ОГРН: _______________<br />
+          Юридический адрес: _______________<br />
+          р/с: _______________<br />
+          БИК: _______________<br />
+          к/с: _______________<br />
+          <div class="field">
+            <span>Подпись:</span>
+            <span>__________________</span>
+          </div>
+          <div class="field">
+            <span>Дата:</span>
+            <span>«___» __________ 2026 г.</span>
+          </div>
+        </div>
+        <div class="signature-col">
+          <strong>Заказчик:</strong>
+          ________________________________<br />
+          ИНН: _______________<br />
+          КПП: _______________<br />
+          ОГРН: _______________<br />
+          Юридический адрес: _______________<br />
+          р/с: _______________<br />
+          БИК: _______________<br />
+          к/с: _______________<br />
+          <div class="field">
+            <span>Подпись:</span>
+            <span>__________________</span>
+          </div>
+          <div class="field">
+            <span>Дата:</span>
+            <span>«___» __________ 2026 г.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="doc-footer">
+        <span>© 2026 Агентство лидогенерации «Звезда»</span>
+        <button class="btn-print" onclick="window.print()">
+          <i class="fas fa-print"></i> Распечатать
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

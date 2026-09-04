@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[Название Агентства] — B2B-лиды для IT и SaaS-компаний</title>
+    <meta
+      name="description"
+      content="Готовые квалифицированные заявки для IT и SaaS-компаний. От 300 лидов в день, оплата только за валидные заявки, гарантия бесплатной замены брака."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="preload" href="js/main.js" as="script" />
+  </head>
+  <body>
+    <!-- ============================================
+     HEADER
+     ============================================ -->
+    <header>
+      <div class="container nav">
+        <a href="#top" class="logo">
+          <img src="./images/logo/nav-logotip.jpeg" alt="" />
+          <div class="logo-text">
+            <span class="logo-title">Агентство Лидогенерации </span>
+          </div>
+        </a>
+        <nav class="nav-links">
+          <a href="#solution">О решении</a>
+          <a href="#quality">Качество лидов</a>
+          <a href="#guarantee">Гарантии</a>
+          <a href="#cooperation">Условия</a>
+        </nav>
+        <div class="nav-actions">
+          <span class="nav-badge">
+            <span class="dot-live"></span> 300+ лидов в день
+          </span>
+          <button class="btn btn-primary" id="btn-open-modal-1">
+            Получить консультацию
+          </button>
+          <button
+            class="burger"
+            id="burger"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+          >
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#solution">О решении</a>
+        <a href="#quality">Качество лидов</a>
+        <a href="#guarantee">Гарантии</a>
+        <a href="#cooperation">Условия</a>
+        <button class="btn btn-primary" id="btn-open-modal-mobile">
+          Получить консультацию
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- ============================================
+  01 — HERO
+  ============================================ -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="eyebrow">B2B-лидогенерация · Контракты СВО</div>
+            <h1>
+              Готовые лиды кандидатов для контрактов СВО — от 300 заявок в день
+            </h1>
+            <p style="font-size: 17px; margin-top: 20px; max-width: 520px">
+              Продаём проверенные заявки от мужчин 18–63 лет, готовых подписать
+              контракт СВО. Полная квалификация, замена брака, работа по всей
+              РФ.
+            </p>
+
+            <div class="hero-bullets">
+              <div class="hero-bullet">
+                <span class="check">✓</span> 300+ квалифицированных кандидатов
+                ежедневно по всей РФ
+              </div>
+              <div class="hero-bullet">
+                <span class="check">✓</span> Каждый кандидат проверен
+                оператором: возраст, здоровье, судимости
+              </div>
+              <div class="hero-bullet">
+                <span class="check">✓</span> Замена невалидных лидов — бесплатно
+                по договору
+              </div>
+            </div>
+
+            <div class="hero-cta-row">
+              <button class="btn btn-primary" id="btn-open-modal-2">
+                Получить консультацию и расчёт
+              </button>
+            </div>
+            <div class="hero-cta-note">
+              Ответ по заявке — в течение рабочего дня
+            </div>
+          </div>
+
+          <div class="pipeline-card reveal">
+            <div class="pipeline-card-head">
+              <span class="pipeline-title">Путь кандидата в системе</span>
+              <span class="pipeline-count" id="liveCounter">лид #0000</span>
+            </div>
+            <div class="pipeline-track">
+              <div class="pipeline-track-fill"></div>
+              <div class="pipeline-dot"></div>
+            </div>
+            <div class="pipeline-stages">
+              <div class="pipeline-stage">
+                <span>Заявка<br />получена</span>
+              </div>
+              <div class="pipeline-stage">
+                <span>Проверка<br />оператором</span>
+              </div>
+              <div class="pipeline-stage">
+                <span>Квалификация<br />подтверждена</span>
+              </div>
+              <div class="pipeline-stage">
+                <span>Передана<br />заказчику</span>
+              </div>
+            </div>
+            <div class="pipeline-foot">
+              <div>
+                <div class="pipeline-metric-num" id="dailyCounter">0</div>
+                <div class="pipeline-metric-label">кандидатов сегодня</div>
+              </div>
+              <div style="text-align: right">
+                <div
+                  class="pipeline-metric-num"
+                  style="color: var(--green); font-size: 22px"
+                >
+                  98%
+                </div>
+                <div class="pipeline-metric-label">точность данных</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+  02 — СВОЯ РЕКЛАМА ИЛИ ГОТОВЫЕ ЛИДЫ
+  ============================================ -->
+      <section id="solution">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="eyebrow">02 — Сравнение</div>
+            <h2>Своя реклама или готовые лиды кандидатов</h2>
+            <p>
+              Разница в деньгах, времени и предсказуемости результата — до того,
+              как вы потратите первый рубль на трафик.
+            </p>
+          </div>
+
+          <div class="compare reveal">
+            <div class="compare-row">
+              <div class="compare-cell compare-head">Параметр</div>
+              <div class="compare-cell compare-head bad">
+                Своя реклама (PPC / SMM)
+              </div>
+              <div class="compare-cell compare-head good">
+                Лиды от Агентства «Звезда»
+              </div>
+            </div>
+
+            <div class="compare-row">
+              <div class="compare-cell label-cell">Модель оплаты</div>
+              <div class="compare-cell bad-txt">
+                <span class="ic">•</span> Оплата за клики и показы вне
+                зависимости от результата
+              </div>
+              <div class="compare-cell good-col">
+                <span class="ic">•</span> Оплата строго за принятый валидный лид
+              </div>
+            </div>
+
+            <div class="compare-row">
+              <div class="compare-cell label-cell">Риск бюджета</div>
+              <div class="compare-cell bad-txt">
+                <span class="ic">•</span> Часть бюджета уходит на нецелевой
+                трафик и тесты
+              </div>
+              <div class="compare-cell good-col">
+                <span class="ic">•</span> Нулевой риск — брак заменяем бесплатно
+              </div>
+            </div>
+
+            <div class="compare-row">
+              <div class="compare-cell label-cell">Скорость запуска</div>
+              <div class="compare-cell bad-txt">
+                <span class="ic">•</span> Недели на настройку, обучение
+                алгоритмов
+              </div>
+              <div class="compare-cell good-col">
+                <span class="ic">•</span> Первые лиды — через 2–3 дня после
+                договора
+              </div>
+            </div>
+
+            <div class="compare-row">
+              <div class="compare-cell label-cell">Ресурсы команды</div>
+              <div class="compare-cell bad-txt">
+                <span class="ic">•</span> Нужен штат маркетологов, таргетологов
+              </div>
+              <div class="compare-cell good-col">
+                <span class="ic">•</span> Собственный отдел лидогенерации не
+                требуется
+              </div>
+            </div>
+
+            <div class="compare-row">
+              <div class="compare-cell label-cell">Качество кандидатов</div>
+              <div class="compare-cell bad-txt">
+                <span class="ic">•</span> Часть заявок — нецелевые или
+                недостоверные
+              </div>
+              <div class="compare-cell good-col">
+                <span class="ic">•</span> Каждый кандидат проверен оператором до
+                передачи
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+  03 — КОНТРОЛЬ КАЧЕСТВА
+  ============================================ -->
+      <section id="quality" class="section-alt">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="eyebrow">03 — Контроль качества</div>
+            <h2>Стандарт проверки кандидата</h2>
+            <p>
+              Прежде чем лид попадёт к вам, оператор колл-центра проходит с
+              кандидатом полный сценарий проверки.
+            </p>
+          </div>
+
+          <div class="qual-grid">
+            <div class="qual-card reveal">
+              <span class="qual-num">01 / Личность</span>
+              <h3>ФИО и возраст</h3>
+              <p>
+                Подтверждение имени, возраста (от 18 до 63 лет), города
+                проживания.
+              </p>
+            </div>
+            <div class="qual-card reveal">
+              <span class="qual-num">02 / Здоровье</span>
+              <h3>Заболевания и противопоказания</h3>
+              <p>
+                Проверка на наличие запретных заболеваний, влияющих на службу по
+                контракту.
+              </p>
+            </div>
+            <div class="qual-card reveal">
+              <span class="qual-num">03 / Судимости</span>
+              <h3>Судимости и ограничения</h3>
+              <p>
+                Проверка на наличие судимостей, которые могут помешать
+                подписанию контракта.
+              </p>
+            </div>
+            <div class="qual-card reveal">
+              <span class="qual-num">04 / Готовность</span>
+              <h3>Когда готов подписать контракт</h3>
+              <p>
+                Фиксация временных рамок готовности кандидата к подписанию
+                контракта.
+              </p>
+            </div>
+            <div class="qual-card reveal">
+              <span class="qual-num">05 / Контакт</span>
+              <h3>Телефон и удобное время звонка</h3>
+              <p>
+                Фиксация контактных данных и предпочтительного времени для
+                связи.
+              </p>
+            </div>
+            <div class="qual-card reveal">
+              <span class="qual-num">06 / Передача</span>
+              <h3>Передача заказчику</h3>
+              <p>
+                Лид передаётся с полным профилем — без лишней ручной обработки.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+  04 — ГАРАНТИЯ
+  ============================================ -->
+      <section id="guarantee">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="eyebrow">04 — Гарантия</div>
+            <h2>100% замена невалидных лидов</h2>
+            <p>
+              Если кандидат не соответствует заявленным критериям — мы меняем
+              его бесплатно.
+            </p>
+          </div>
+
+          <div class="guarantee-wrap">
+            <div class="shield reveal">
+              <div class="shield-icon">З</div>
+              <h3>Ответственность закреплена договором</h3>
+              <p>
+                Условия замены прописаны в договоре и не зависят от устных
+                договорённостей.
+              </p>
+              <div class="shield-stat">
+                Заявка на замену рассматривается<br />
+                <strong style="color: var(--text)">в течение 48 часов</strong>
+              </div>
+            </div>
+
+            <div class="reasons">
+              <div class="reason-group err reveal">
+                <h4>⚠ Ошибка со стороны оператора</h4>
+                <ul>
+                  <li>Неверно указан возраст (выше или ниже допустимого)</li>
+                  <li>Лид-дубль</li>
+                  <li>Офицерский состав (не подходят по статусу)</li>
+                  <li>Некорректно зафиксированные контактные данные</li>
+                </ul>
+              </div>
+              <div class="reason-group dec reveal">
+                <h4>⚠ Недостоверные данные кандидата</h4>
+                <ul>
+                  <li>
+                    Кандидат уже находится в зоне СВО на контракте и умолчал об
+                    этом
+                  </li>
+                  <li>Кандидат имеет запретные судимости и умолчал об этом</li>
+                  <li>
+                    Кандидат имеет серьёзные запретные заболевания и умолчал об
+                    этом
+                  </li>
+                  <li>При вашем звонке трубку подняло третье лицо</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-alt">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="eyebrow">07 — Показатели</div>
+            <h2>Агентство «Звезда» в цифрах</h2>
+          </div>
+
+          <div class="stats-grid reveal">
+            <div class="stat-cell">
+              <div class="stat-num">
+                <span data-count="300">0</span><span class="suffix">+</span>
+              </div>
+              <div class="stat-label">лидов в день</div>
+            </div>
+            <div class="stat-cell">
+              <div class="stat-num">
+                <span data-count="3">0</span><span class="suffix">г.</span>
+              </div>
+              <div class="stat-label">на рынке лидогенерации</div>
+            </div>
+            <div class="stat-cell">
+              <div class="stat-num">
+                <span data-count="98">0</span><span class="suffix">%</span>
+              </div>
+              <div class="stat-label">точность данных кандидатов</div>
+            </div>
+            <div class="stat-cell">
+              <div class="stat-num">
+                <span data-count="100">0</span><span class="suffix">%</span>
+              </div>
+              <div class="stat-label">охват регионов РФ</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contacts">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-info reveal">
+            <div class="eyebrow">08 — Контакты</div>
+            <h2>Обсудим ваш объём лидов</h2>
+            <p>
+              Оставьте контакты — свяжемся в течение рабочего дня и предложим
+              тестовую партию кандидатов для контрактов СВО.
+            </p>
+
+            <div class="contact-list">
+              <div class="contact-item">
+                <span class="k">Телефон</span>
+                <span>+7 (999) 123-45-67</span>
+              </div>
+              <div class="contact-item">
+                <span class="k">Email</span>
+                <span>info@zvezda-lids.ru</span>
+              </div>
+              <div class="contact-item">
+                <span class="k">Telegram</span>
+                <span>@zvezda_lids</span>
+              </div>
+              <div class="contact-item">
+                <span class="k">Юр. лицо</span>
+                <span
+                  >ООО «Агентство лидогенерации Звезда», ИНН 1234567890</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <form class="footer-form reveal" id="footerForm" novalidate>
+            <div class="field">
+              <label for="ff-name">Имя</label>
+              <input
+                type="text"
+                id="ff-name"
+                name="name"
+                placeholder="Как к вам обращаться"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="ff-company">Компания</label>
+              <input
+                type="text"
+                id="ff-company"
+                name="company"
+                placeholder="Название компании (если есть)"
+              />
+            </div>
+            <div class="field">
+              <label for="ff-contact">Телефон или Telegram</label>
+              <input
+                type="text"
+                id="ff-contact"
+                name="contact"
+                placeholder="+7 999 000-00-00 или @username"
+                required
+              />
+            </div>
+
+            <!-- Улучшенный чекбокс -->
+            <div class="field checkbox-field" id="checkboxField">
+              <label class="checkbox-label">
+                <input
+                  type="checkbox"
+                  id="ff-consent"
+                  name="consent"
+                  required
+                />
+                <span class="checkbox-custom">
+                  <svg
+                    class="check-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <span class="checkbox-text">
+                  Принимаю
+                  <a href="./privacy.html">Политику конфиденциальности</a>, даю
+                  <a href="./consent.html">согласие на обработку ПДн</a>,
+                  ознакомлен с <a href="./contract.html">договором</a>. Сайт не
+                  является офертой.
+                </span>
+              </label>
+              <div class="error-message">Пожалуйста, примите условия</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              Получить консультацию
+            </button>
+            <div class="form-status" id="footerStatus"></div>
+          </form>
+        </div>
+
+        <div class="footer-bottom">
+          <span class="copyright"
+            >© <span id="year"></span> Агентство лидогенерации Звезда. Все права
+            защищены.</span
+          >
+          <div class="footer-bottom-links">
+            <a href="./privacy.html">Политика конфиденциальности</a>
+            <a href="./conset.html">Согласие на обработку ПДн</a>
+            <a href="./contract.html">Договор на оказание услуг</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-overlay" id="modalOverlay">
+      <div
+        class="modal-box"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <div class="modal-head">
+          <div>
+            <h3 id="modalTitle">Расчёт стоимости заявок</h3>
+            <p class="sub">
+              Оставьте контакты — пришлём условия и стоимость под ваш объём.
+            </p>
+          </div>
+          <button class="modal-close" id="modalClose" aria-label="Закрыть">
+            ✕
+          </button>
+        </div>
+        <form id="modalForm" novalidate>
+          <div class="field">
+            <label for="m-name">Имя</label>
+            <input
+              type="text"
+              id="m-name"
+              name="name"
+              placeholder="Как к вам обращаться"
+              required
+            />
+          </div>
+          <div class="field">
+            <label for="m-contact">Телефон или Telegram</label>
+            <input
+              type="text"
+              id="m-contact"
+              name="contact"
+              placeholder="+7 999 000-00-00 или @username"
+              required
+            />
+          </div>
+          <div class="field">
+            <label for="m-company">Компания</label>
+            <input
+              type="text"
+              id="m-company"
+              name="company"
+              placeholder="Название компании"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Отправить заявку
+          </button>
+          <div class="form-status" id="modalStatus"></div>
+        </form>
+      </div>
+    </div>
+
+    <button class="top-btn" id="topBtn" aria-label="Наверх">↑</button>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

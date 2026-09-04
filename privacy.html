@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Политика конфиденциальности — Агентство лидогенерации Звезда</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body {
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.7;
+        color: #1a1a1a;
+        background: #f8f9fa;
+        padding: 40px 20px;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 4px 60px rgba(0, 0, 0, 0.06);
+        padding: 48px 56px;
+      }
+
+      .docs-nav {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      }
+
+      .docs-nav a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        color: #555;
+        background: #f5f5f5;
+        transition: all 0.25s ease;
+        border: 1px solid transparent;
+      }
+
+      .docs-nav a i {
+        font-size: 14px;
+      }
+
+      .docs-nav a:hover {
+        background: #e8e8e8;
+        color: #1a1a1a;
+      }
+
+      .docs-nav a.active {
+        background: #1a1a1a;
+        color: #fff;
+        border-color: #1a1a1a;
+      }
+
+      .docs-nav a.active i {
+        color: #fff;
+      }
+
+      h1 {
+        font-size: 28px;
+        font-weight: 800;
+        margin-bottom: 6px;
+        letter-spacing: -0.02em;
+      }
+
+      .doc-meta {
+        color: #888;
+        font-size: 14px;
+        margin-bottom: 32px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .doc-meta span {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      h2 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 32px;
+        margin-bottom: 12px;
+        letter-spacing: -0.01em;
+      }
+
+      h3 {
+        font-size: 17px;
+        font-weight: 600;
+        margin-top: 24px;
+        margin-bottom: 8px;
+      }
+
+      p {
+        margin-bottom: 16px;
+        color: #333;
+      }
+
+      ul,
+      ol {
+        margin-bottom: 16px;
+        padding-left: 24px;
+      }
+
+      li {
+        margin-bottom: 8px;
+        color: #333;
+      }
+
+      .highlight-box {
+        background: #f8f9fa;
+        border-left: 4px solid #1a1a1a;
+        padding: 16px 24px;
+        border-radius: 0 10px 10px 0;
+        margin: 20px 0;
+      }
+
+      .highlight-box strong {
+        color: #1a1a1a;
+      }
+
+      .doc-footer {
+        margin-top: 40px;
+        padding-top: 24px;
+        border-top: 1px solid rgba(0, 0, 0, 0.06);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 16px;
+        font-size: 14px;
+        color: #888;
+      }
+
+      .doc-footer .btn-print {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 24px;
+        background: #1a1a1a;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background 0.25s ease;
+      }
+
+      .doc-footer .btn-print:hover {
+        background: #2a2a2a;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 28px 20px;
+        }
+        .docs-nav {
+          gap: 8px;
+          padding-bottom: 24px;
+        }
+        .docs-nav a {
+          font-size: 13px;
+          padding: 8px 14px;
+        }
+        h1 {
+          font-size: 22px;
+        }
+        h2 {
+          font-size: 18px;
+        }
+        .doc-footer {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: 16px 12px;
+        }
+        .container {
+          padding: 20px 16px;
+          border-radius: 16px;
+        }
+        .docs-nav a {
+          font-size: 12px;
+          padding: 6px 12px;
+        }
+        .docs-nav a span {
+          display: none;
+        }
+        h1 {
+          font-size: 19px;
+        }
+      }
+
+      @media print {
+        body {
+          background: #fff;
+          padding: 0;
+        }
+        .container {
+          box-shadow: none;
+          padding: 40px;
+          border-radius: 0;
+        }
+        .docs-nav {
+          display: none;
+        }
+        .doc-footer .btn-print {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Навигация -->
+      <nav class="docs-nav">
+        <a href="./privacy.html" class="active">
+          <i class="fas fa-lock"></i> <span>Политика конфиденциальности</span>
+        </a>
+        <a href="./conset.html">
+          <i class="fas fa-check-circle"></i>
+          <span>Согласие на обработку ПДн</span>
+        </a>
+        <a href="./contract.html">
+          <i class="fas fa-file-signature"></i>
+          <span>Договор на оказание услуг</span>
+        </a>
+      </nav>
+
+      <!-- Документ -->
+      <h1>Политика конфиденциальности</h1>
+      <div class="doc-meta">
+        <span
+          ><i class="far fa-calendar-alt"></i> Версия от 30 августа 2026
+          г.</span
+        >
+        <span
+          ><i class="far fa-building"></i> Агентство лидогенерации
+          «Звезда»</span
+        >
+      </div>
+
+      <p>
+        Настоящая Политика конфиденциальности (далее — Политика) регулирует
+        порядок сбора, обработки, хранения и защиты персональных данных
+        пользователей (далее — Клиент) при использовании сайта агентства
+        лидогенерации «Звезда» (далее — Агентство).
+      </p>
+
+      <h2>1. Общие положения</h2>
+      <p>
+        1.1. Агентство является Оператором персональных данных в соответствии с
+        Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных».
+      </p>
+      <p>
+        1.2. Настоящая Политика обязательна для ознакомления и исполнения всеми
+        сотрудниками Агентства, а также лицами, привлекаемыми Агентством для
+        обработки персональных данных.
+      </p>
+      <p>
+        1.3. Используя Сайт, Клиент даёт согласие на обработку своих
+        персональных данных в соответствии с настоящей Политикой.
+      </p>
+
+      <h2>2. Какие данные мы собираем</h2>
+      <p>Агентство может собирать следующие персональные данные Клиента:</p>
+      <ul>
+        <li>
+          <strong>Контактная информация:</strong> фамилия, имя, отчество, номер
+          телефона, адрес электронной почты;
+        </li>
+        <li>
+          <strong>Реквизиты компании:</strong> наименование организации, ИНН,
+          КПП, ОГРН, юридический адрес;
+        </li>
+        <li>
+          <strong>Информация о запросе:</strong> данные, указанные в заявке на
+          расчёт или консультацию;
+        </li>
+        <li>
+          <strong>Техническая информация:</strong> IP-адрес, тип браузера,
+          версия операционной системы, данные о посещениях Сайта.
+        </li>
+      </ul>
+
+      <h2>3. Цели сбора данных</h2>
+      <p>Персональные данные Клиента используются в следующих целях:</p>
+      <ul>
+        <li>Предоставление услуг по лидогенерации и консультационных услуг;</li>
+        <li>Заключение и исполнение договоров на оказание услуг;</li>
+        <li>Улучшение качества обслуживания и обратная связь с Клиентом;</li>
+        <li>
+          Информирование Клиента о новостях, акциях и специальных предложениях
+          (с согласия Клиента);
+        </li>
+        <li>Выполнение требований законодательства Российской Федерации.</li>
+      </ul>
+
+      <h2>4. Правовые основания обработки</h2>
+      <p>Обработка персональных данных осуществляется на основании:</p>
+      <ul>
+        <li>
+          Согласия Клиента, выраженного путём заполнения формы на Сайте или
+          подписания договора;
+        </li>
+        <li>
+          Договора на оказание услуг, заключённого между Агентством и Клиентом;
+        </li>
+        <li>Требований законодательства Российской Федерации.</li>
+      </ul>
+
+      <h2>5. Передача данных третьим лицам</h2>
+      <p>
+        5.1. Агентство обязуется не раскрывать и не передавать персональные
+        данные Клиента третьим лицам без его предварительного согласия, за
+        исключением случаев, предусмотренных законодательством.
+      </p>
+      <p>5.2. Передача данных третьим лицам возможна в следующих случаях:</p>
+      <ul>
+        <li>
+          Для исполнения договора перед Клиентом (например, передача данных
+          кандидатов);
+        </li>
+        <li>
+          По запросу уполномоченных государственных органов в порядке,
+          установленном законом;
+        </li>
+        <li>
+          При реорганизации Агентства, с соблюдением требований о защите
+          персональных данных.
+        </li>
+      </ul>
+
+      <h2>6. Сроки хранения данных</h2>
+      <p>
+        Персональные данные хранятся не дольше, чем этого требуют цели их
+        обработки, но в любом случае не более 5 лет с момента последнего
+        взаимодействия с Клиентом, если иное не предусмотрено законодательством.
+      </p>
+
+      <h2>7. Права Клиента</h2>
+      <p>Клиент имеет право:</p>
+      <ul>
+        <li>На запрос информации об обработке своих персональных данных;</li>
+        <li>
+          На уточнение, блокирование или уничтожение своих персональных данных;
+        </li>
+        <li>На отзыв согласия на обработку персональных данных;</li>
+        <li>
+          На обращение в уполномоченный орган по защите прав субъектов
+          персональных данных.
+        </li>
+      </ul>
+
+      <div class="highlight-box">
+        <strong>Для реализации своих прав</strong> Клиент может обратиться в
+        Агентство по контактным данным, указанным на Сайте.
+      </div>
+
+      <h2>8. Ответственность</h2>
+      <p>
+        Агентство несёт ответственность за неразглашение персональных данных и
+        их защиту в соответствии с законодательством Российской Федерации.
+        Клиент, в свою очередь, обязан предоставлять только достоверные и
+        актуальные данные.
+      </p>
+
+      <h2>9. Заключительные положения</h2>
+      <p>
+        9.1. Настоящая Политика может быть изменена Агентством в одностороннем
+        порядке. Актуальная версия всегда доступна на Сайте.
+      </p>
+      <p>
+        9.2. Все споры, возникающие в связи с настоящей Политикой, разрешаются в
+        соответствии с законодательством Российской Федерации.
+      </p>
+      <p>
+        9.3. Если какие-либо положения настоящей Политики признаны
+        недействительными, это не влияет на действительность остальных
+        положений.
+      </p>
+
+      <div class="doc-footer">
+        <span>© 2026 Агентство лидогенерации «Звезда»</span>
+        <button class="btn-print" onclick="window.print()">
+          <i class="fas fa-print"></i> Распечатать
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+Disallow: /assets/
+Disallow: /temp/
+
+Sitemap: https://ваш-домен.ру/sitemap.xml
+
+Host: https://ваш-домен.ру
+
+Crawl-delay: 2
+Clean-param: utm_source /?*
