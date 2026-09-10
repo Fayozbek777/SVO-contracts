@@ -4,9 +4,9 @@ Allow: /
 Disallow: /assets/
 Disallow: /temp/
 
-Sitemap: https://ваш-домен.ру/sitemap.xml
+Sitemap: https://сила-родины.рф/sitemap.xml
 
-Host: https://ваш-домен.ру
+Host: https://сила-родины.рф
 
 Crawl-delay: 2
 Clean-param: utm_source /?*
